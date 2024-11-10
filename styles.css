@@ -1,0 +1,398 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #5C7C89; /* Light grey-blue background */
+    color: #242424; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #011425;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+header.sticky {
+    background-color: #1F4959;
+}
+
+header .logo-box {
+    display: inline-block;
+}
+
+header .logo-box h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li i {
+    margin-left: 5px;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; /* Golden color on hover */
+}
+
+/* Added margin to the "Get Consultation" button to prevent overlap */
+header .btn {
+    background-color: #FFD700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-left: 20px; /* Added space between the button and the last menu item */
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 10;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    padding: 1rem 2rem;
+    background-color: #FFD700;
+    border-radius: 5px;
+    color: #011425;
+}
+
+/* Home Page Section */
+.home {
+    background-color: #011425;  /* Dark blue background */
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;  /* Ensure it's positioned above other elements */
+    z-index: 1;  /* Higher than the header if necessary */
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home .btn {
+    padding: 1rem 2rem;
+    background-color: #FFD700;  /* Golden color */
+    color: #011425;  /* Dark text for contrast */
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home .btn:hover {
+    background-color: #1F4959;  /* Darker background on hover */
+    color: white;
+}
+
+/* To prevent being hidden by header */
+body {
+    margin-top: 100px;  /* Add some margin to offset fixed header */
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #1F4959;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #242424;
+}
+
+/* Styling for directors' section */
+.directors {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.director {
+    text-align: center;
+    max-width: 250px;
+}
+
+.director-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about {
+    background-color: #5C7C89;
+    color: #242424;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    color: #011425;
+}
+
+.about p {
+    font-size: 1.25rem;
+}
+
+.about h3 {
+    color: #1F4959;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows for better responsiveness */
+}
+
+.info-item {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 250px;
+}
+
+.info-item i {
+    font-size: 3rem;
+    color: #1F4959;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #011425;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer ul li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #FFD700;
+}
+
+/* Cursor */
+#cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/* Parallax Background */
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Added responsive styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .btn {
+        margin-top: 10px; /* Space for the button on mobile view */
+    }
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    z-index: 9999;
+}

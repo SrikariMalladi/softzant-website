@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Softzant - Empowering Digital Transformations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-box">
+                <h1 class="company-name">Softzant</h1>
+                <p class="subtitle">TECHNOLOGIES PRIVATE LIMITED</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a><i class='bx bx-home'></i></li>
+                    <li><a href="#services">Services</a><i class='bx bx-cog'></i></li>
+                    <li><a href="#about">About Us</a><i class='bx bx-user'></i></li>
+                    <li><a href="#contact">Contact</a><i class='bx bx-phone'></i></li>
+                    <li><a href="#consultation" class="btn">Get Consultation</a><i class='bx bx-calendar'></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Welcome to Softzant</h1>
+                <p>Your trusted partner in innovative software solutions and IT services</p>
+                <a href="#services" class="btn">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Comprehensive IT solutions tailored for businesses of all sizes.</p>
+
+            <div class="service-item">
+                <h3>Custom Software Development</h3>
+                <p>We provide bespoke software solutions that cater to your business's unique needs, ensuring scalability, flexibility, and performance.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Cloud Solutions</h3>
+                <p>Our cloud management services help businesses leverage the power of the cloud for improved efficiency and scalability.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>AI & ML Integration</h3>
+                <p>Leverage AI for smarter decision-making and advanced automation, enhancing your business operations and customer experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Softzant</h2>
+            <p>Softzant Technologies Private Limited was founded with a mission to provide transformative IT solutions. Our experienced team delivers results-driven services that enable businesses to thrive in the digital era.</p>
+            <h3>Directors</h3>
+            <p>Softzant Technologies is led by two dynamic directors:</p>
+            <div class="directors">
+                <div class="director">
+                    <h4>Rohith Yadav Giri</h4>
+                    <p>Co-founder & Director</p>
+                </div>
+                <div class="director">
+                    <h4>Lavan Kumar Ravella</h4>
+                    <img src="https://assets.onecompiler.app/42gxyn8kb/42xpxjxb3/dic.jpg" alt="Lavan Kumar Ravella" class="director-image">
+                    <p>Co-founder & Director</p>
+                </div>
+            </div>
+            <p>Company Registration Number: 189402</p>
+            <p>Corporate Identification Number (CIN): U62099TS2024PTC189402</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We’d love to help accelerate your business transformation. Reach out to us for a consultation!</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="bx bx-mail-send"></i>
+                    <h3>Email</h3>
+                    <p>info@softzant.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="bx bx-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91-1234567890</p>
+                </div>
+                <div class="info-item">
+                    <i class="bx bx-map"></i>
+                    <h3>Address</h3>
+                    <p>123 Tech Street, Hyderabad, Telangana, 500067</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Softzant</h3>
+                <p>Your partner in digital transformation, delivering innovative solutions for the future.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Get Consultation Modal -->
+    <div id="consultation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Schedule a Free Consultation</h2>
+            <form id="consultation-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cursor"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

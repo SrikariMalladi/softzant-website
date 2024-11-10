@@ -30,25 +30,24 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = `${y - cursor.offsetHeight / 2}px`;
 });
 
-// Modal functionality
-const openModalBtn = document.querySelector('.btn'); // Button to open modal
-const closeModalBtn = document.querySelector('.close'); // Button to close modal
-const modal = document.getElementById('consultation-modal'); // Modal itself
+// Modal elements
+const modal = document.getElementById('consultationModal');
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
 
-// Open modal when the "Get Consultation" button is clicked
-openModalBtn.addEventListener('click', function (e) {
-    e.preventDefault();  // Prevent default action
-    modal.style.display = 'block';  // Show the modal
+// Open the modal when the button is clicked
+openModalBtn.addEventListener('click', function () {
+    modal.classList.add('show');
 });
 
-// Close modal when the 'x' button is clicked
+// Close the modal when the close button is clicked
 closeModalBtn.addEventListener('click', function () {
-    modal.style.display = 'none';  // Hide the modal
+    modal.classList.remove('show');
 });
 
-// Close modal when clicking outside the modal content
+// Close the modal if the user clicks outside the modal content
 window.addEventListener('click', function (e) {
     if (e.target === modal) {
-        modal.style.display = 'none';  // Hide the modal if clicked outside
+        modal.classList.remove('show');
     }
 });

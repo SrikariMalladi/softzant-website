@@ -46,3 +46,26 @@ if (openModalBtn && closeModalBtn) {
         }
     });
 }
+// Careers Modal Functionality
+const careersModal = document.getElementById('careersModal');
+const openCareersModalBtn = document.getElementById('openCareersModalBtn');
+const closeCareersModalBtn = document.getElementById('closeCareersModalBtn');
+
+if (openCareersModalBtn && closeCareersModalBtn) {
+    // Open the Careers modal
+    openCareersModalBtn.addEventListener('click', function () {
+        careersModal.classList.add('show');
+    });
+
+    // Close the Careers modal
+    closeCareersModalBtn.addEventListener('click', function () {
+        careersModal.classList.remove('show');
+    });
+
+    // Close Careers modal when clicking outside of it
+    window.addEventListener('click', function (e) {
+        if (e.target === careersModal) {
+            careersModal.classList.remove('show');
+        }
+    });
+}
